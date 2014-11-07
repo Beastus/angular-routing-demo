@@ -1,4 +1,4 @@
 angular-routing-fiddle
 ======================
 
-Routing experiment
+Playing with nested views and routes in Angular.
