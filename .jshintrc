@@ -23,9 +23,9 @@
     "maxcomplexity": 10,
 
     "browser": true,
-    "jquery": true,
 
     "globals": {
-      "console": true
+      "console": true,
+      "angular": true
     }
 }

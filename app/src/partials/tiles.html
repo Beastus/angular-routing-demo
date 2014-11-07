@@ -1,0 +1,12 @@
+<div ng-controller="TilesController as tiles">
+    <button ng-click="tiles.addTile(tiles.list.length, 'I like this!')">Add</button>
+
+    <ul>
+        <li ng-repeat="tile in tiles.list">
+            {{tile}}
+            <a href="#{{ 's1.tile' | routeSegmentUrl: {id: tile.id} }}">{{tile.desc}}</a>
+            :: <a href="#{{ 's1.tile.tab1' | routeSegmentUrl: {id: tile.id} }}">tab1</a>
+        </li>
+    </ul>
+
+</div>

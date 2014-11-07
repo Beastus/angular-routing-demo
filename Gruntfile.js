@@ -34,13 +34,9 @@ module.exports = function (grunt) {
           },
           vendor: {
             src: [
-              './vendor/jquery/dist/jquery.min.js',
               './vendor/angular/angular.min.js',
               './vendor/angular-route/angular-route.min.js',
-              './vendor/angular-touch/angular-touch.min.js',
-              './vendor/bootstrap/dist/js/bootstrap.min.js',
-              './vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
-              './vendor/angular-animate/angular-animate.min.js'
+              './vendor/angular-route-segment/build/angular-route-segment.js'
             ],
             dest: './build/js/vendor-bundle.min.js'
           }
@@ -63,7 +59,7 @@ module.exports = function (grunt) {
           development: {
             options: {
               paths: ['./app/less/'],
-              cleancss: true,
+              cleancss: true
             },
             files: {
               './build/css/app-bundle.min.css': './app/less/main.less'
@@ -124,8 +120,8 @@ module.exports = function (grunt) {
               {
                 expand: true,
                 flatten: true,
-                src: ['./app/src/views/*.html'],
-                dest: './build/views/'
+                src: ['./app/src/partials/*.html'],
+                dest: './build/partials/'
               },
               {
                 expand: true,
@@ -164,7 +160,7 @@ module.exports = function (grunt) {
             ],
             options: {
               interrupt: true
-            },
+            }
           },
           configFiles: {
             files: [ 'Gruntfile.js' ],
