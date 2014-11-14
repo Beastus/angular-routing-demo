@@ -16,6 +16,7 @@
     "unused": false,
     "boss": false,
     "eqnull": true,
+    "quotmark": true,
 
     "maxparams": 3,
     "maxdepth": 3,

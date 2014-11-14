@@ -1,0 +1,45 @@
+
+// main.less
+
+.content {
+  margin: 15px;
+}
+
+.tiles {
+  list-style: none;
+  li {
+    border: 1px solid #333;
+    box-shadow: 1px 0 2px 0 #555;
+    margin: 12px;
+    display: block;
+    float: left;
+    width: 150px;
+    p {
+      display: block;
+      font-weight: bold;
+      padding: 8px;
+      width: 100%;
+      text-align: center;
+      a {
+        padding: 0;
+      }
+    }
+    a {
+      display: block;
+      padding: 2px 8px;
+    }
+  }
+}
+
+.anim {
+  &.ng-enter {
+    transition: opacity 800ms;
+    opacity: 0;
+  }
+  &.ng-enter-active {
+    opacity: 1;
+  }
+  &.ng-leave {
+    display: none;
+  }
+}

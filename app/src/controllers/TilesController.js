@@ -4,9 +4,10 @@
 
     function TilesController () {
         this.list = [
-            { id: 1, desc: 'testing my life' },
-            { id: 2, desc: 'testing it' }
+            { id: 1, desc: "test what matters" },
+            { id: 2, desc: "testing it" }
         ];
+        this.newTile = "New Tile";
     }
 
     TilesController.prototype.addTile = function (id, description) {

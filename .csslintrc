@@ -8,7 +8,7 @@
     "outline-none": false,
     "unqualified-attributes": false,
     
-    "adjoining-classes": true,
+    "adjoining-classes": false,
     "important": true,
     "overqualified-elements": true,
     "text-indent": true
