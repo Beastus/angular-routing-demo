@@ -1,0 +1,16 @@
+<h2>Now we're talking about cards</h2>
+
+<div ng-controller="CardsController as cards" class="wrapper">
+
+  <div class="columns">
+    <div class="card" ng-repeat="card in cards.list">
+      <a href="{{ 's2.cards.card' | routeSegmentUrl: {id: card.id} }}">
+        {{card.desc}}
+      </a>
+      <div>{{card.status}}</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="anim" app-view-segment="2"></div>

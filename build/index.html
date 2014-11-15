@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html lang="en" ng-app="myApp">
 <head>
   <base href="/">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   <title>Angular routing test</title>
+
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
   <link href="css/app-bundle.min.css" rel="stylesheet" />
@@ -12,7 +17,10 @@
 
 <div class="content">
 
-    <a href="/">home</a> &bull; <a href="{{ 's1' | routeSegmentUrl }}">section 1</a> &bull; section 2
+    <a href="/">home</a> &bull;
+    <a href="{{ 's1' | routeSegmentUrl }}">section 1</a> &bull;
+    <a href="{{ 's2' | routeSegmentUrl }}">section 2</a> &bull;
+    <a href="{{ 's2.cards' | routeSegmentUrl }}">section 2 cards</a>
 
     <div id="contents" class="anim" app-view-segment="0"></div>
 
