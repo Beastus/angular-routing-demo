@@ -1,4 +1,4 @@
-angular-routing-fiddle
+angular-routing-demo
 ======================
 
-Playing with nested views and routes in Angular.
+Demonstrating nested views and routes in Angular 1.x with ui-router.
